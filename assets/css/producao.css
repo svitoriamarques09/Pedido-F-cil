@@ -1,0 +1,35 @@
+body{
+    background:#f4f6fb;
+}
+
+.dashboard-box{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+}
+
+.btn-primary{
+
+    background:#b22222;
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#8d1717;
+
+}

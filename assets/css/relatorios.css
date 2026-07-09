@@ -1,0 +1,468 @@
+/*==================================
+    RESET
+==================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f6fa;
+}
+
+/*==================================
+    SIDEBAR
+==================================*/
+
+.sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:250px;
+    height:100vh;
+
+    background:linear-gradient(180deg,#8B0000,#C62828);
+
+    color:#fff;
+
+    padding:25px;
+
+    overflow-y:auto;
+
+}
+
+.logo{
+
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.logo i{
+
+    font-size:50px;
+    color:#FFD54F;
+
+}
+
+.sidebar-logo-img{
+    width:64px;
+    height:64px;
+    object-fit:cover;
+    border-radius:16px;
+    background:#fff;
+    padding:4px;
+}
+
+.logo h3{
+
+    margin-top:10px;
+    font-weight:bold;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    margin-bottom:12px;
+
+}
+
+.sidebar ul li a{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    color:white;
+    text-decoration:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a{
+
+    background:rgba(255,255,255,.18);
+
+}
+
+/*==================================
+    MAIN
+==================================*/
+
+.main-content{
+
+    margin-left:250px;
+    padding:35px;
+
+}
+
+.main-content h2{
+
+    font-weight:700;
+    color:#333;
+
+}
+
+.main-content p{
+
+    color:#777;
+
+}
+
+/*==================================
+    BOTÕES
+==================================*/
+
+.btn-danger{
+
+    background:#C62828;
+    border:none;
+
+}
+
+.btn-danger:hover{
+
+    background:#a71d1d;
+
+}
+
+.btn-success,
+.btn-secondary{
+
+    border:none;
+
+}
+
+/*==================================
+    CARDS
+==================================*/
+
+.card-dashboard{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:100%;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card-dashboard:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card-info span{
+
+    color:#777;
+    font-size:15px;
+
+}
+
+.card-info h3{
+
+    margin-top:10px;
+    font-size:28px;
+    font-weight:bold;
+
+}
+
+.card-icon{
+
+    width:65px;
+    height:65px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.card-icon i{
+
+    color:white;
+    font-size:28px;
+
+}
+
+/*==================================
+    BOXES
+==================================*/
+
+.dashboard-box{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+/*==================================
+    FILTROS
+==================================*/
+
+.form-control,
+.form-select{
+
+    height:45px;
+
+    border-radius:10px;
+
+}
+
+.input-group-text{
+
+    background:white;
+
+}
+
+/*==================================
+    GRÁFICOS
+==================================*/
+
+canvas{
+
+    width:100% !important;
+
+}
+
+canvas#graficoVendas{
+
+    height:320px !important;
+
+}
+
+canvas#graficoCategorias{
+
+    max-height:280px;
+
+}
+
+/*==================================
+    RANKING
+==================================*/
+
+.ranking-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.ranking-item strong{
+
+    color:#333;
+
+}
+
+.ranking-item small{
+
+    color:#777;
+
+}
+
+/*==================================
+    ALERTAS
+==================================*/
+
+.alert{
+
+    border:none;
+
+    border-radius:12px;
+
+}
+
+/*==================================
+    TABELA
+==================================*/
+
+.table{
+
+    margin-top:15px;
+
+}
+
+.table thead{
+
+    background:#f8f9fa;
+
+}
+
+.table thead th{
+
+    border:none;
+
+    color:#555;
+
+    font-weight:600;
+
+}
+
+.table tbody td{
+
+    vertical-align:middle;
+
+}
+
+.table tbody tr{
+
+    transition:.3s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f8f9fa;
+
+}
+
+/*==================================
+    BADGES
+==================================*/
+
+.badge{
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+/*==================================
+    PAGINA
+==================================*/
+
+hr{
+
+    opacity:.15;
+
+}
+
+/*==================================
+    RESPONSIVO
+==================================*/
+
+@media(max-width:992px){
+
+.sidebar{
+
+    position:relative;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.main-content{
+
+    margin-left:0;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.main-content{
+
+    padding:20px;
+
+}
+
+.card-dashboard{
+
+    margin-bottom:20px;
+
+}
+
+.dashboard-box{
+
+    margin-bottom:20px;
+
+}
+
+.table{
+
+    font-size:14px;
+
+}
+
+.btn{
+
+    margin-bottom:10px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.card-info h3{
+
+    font-size:22px;
+
+}
+
+.card-icon{
+
+    width:55px;
+    height:55px;
+
+}
+
+.card-icon i{
+
+    font-size:22px;
+
+}
+
+.dashboard-box{
+
+    padding:18px;
+
+}
+
+}

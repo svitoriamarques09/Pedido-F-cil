@@ -1,0 +1,444 @@
+/*==================================
+    RESET
+==================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f6fa;
+}
+
+/*==================================
+    SIDEBAR
+==================================*/
+
+.sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:250px;
+    height:100vh;
+
+    background:linear-gradient(180deg,#8B0000,#C62828);
+
+    padding:25px;
+
+    color:#fff;
+
+    overflow-y:auto;
+
+}
+
+.logo{
+
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.logo i{
+
+    font-size:55px;
+    color:#FFD54F;
+
+}
+
+.sidebar-logo-img{
+    width:64px;
+    height:64px;
+    object-fit:cover;
+    border-radius:16px;
+    background:#fff;
+    padding:4px;
+}
+
+.logo h3{
+
+    margin-top:10px;
+    font-weight:bold;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    margin-bottom:12px;
+
+}
+
+.sidebar ul li a{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:14px;
+
+    color:white;
+    text-decoration:none;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a{
+
+    background:rgba(255,255,255,.18);
+
+}
+
+/*==================================
+    CONTEÚDO
+==================================*/
+
+.main-content{
+
+    margin-left:250px;
+    padding:35px;
+
+}
+
+.main-content h2{
+
+    font-weight:700;
+
+}
+
+.main-content p{
+
+    color:#777;
+
+}
+
+/*==================================
+    BOTÃO
+==================================*/
+
+.btn-danger{
+
+    background:#C62828;
+    border:none;
+
+}
+
+.btn-danger:hover{
+
+    background:#a71d1d;
+
+}
+
+/*==================================
+    CARDS SUPERIORES
+==================================*/
+
+.card-dashboard{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    height:100%;
+
+}
+
+.card-dashboard:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card-info span{
+
+    color:#888;
+    font-size:15px;
+
+}
+
+.card-info h3{
+
+    margin-top:10px;
+    font-size:30px;
+    font-weight:bold;
+
+}
+
+.card-icon{
+
+    width:65px;
+    height:65px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+.card-icon i{
+
+    color:white;
+    font-size:28px;
+
+}
+
+/*==================================
+    BOX FILTROS
+==================================*/
+
+.dashboard-box{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.form-control,
+.form-select{
+
+    height:45px;
+
+    border-radius:10px;
+
+}
+
+.input-group-text{
+
+    background:white;
+
+}
+
+/*==================================
+    PRODUTOS
+==================================*/
+
+.product-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    height:100%;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+.product-img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.product-body{
+
+    padding:20px;
+
+}
+
+.product-body h5{
+
+    font-weight:700;
+
+}
+
+.product-body p{
+
+    min-height:50px;
+
+}
+
+.product-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:20px 0;
+
+    font-weight:600;
+
+    color:#555;
+
+}
+
+.product-info i{
+
+    color:#C62828;
+
+}
+
+.product-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.product-buttons .btn{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:10px;
+
+}
+
+/*==================================
+    BADGES
+==================================*/
+
+.badge{
+
+    font-size:13px;
+
+    padding:8px 12px;
+
+}
+
+/*==================================
+    PAGINAÇÃO
+==================================*/
+
+.pagination .page-link{
+
+    color:#C62828;
+
+}
+
+.pagination .active .page-link{
+
+    background:#C62828;
+
+    border-color:#C62828;
+
+}
+
+/*==================================
+    RESPONSIVO
+==================================*/
+
+@media(max-width:992px){
+
+.sidebar{
+
+    width:100%;
+    height:auto;
+    position:relative;
+
+}
+
+.main-content{
+
+    margin-left:0;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.main-content{
+
+    padding:20px;
+
+}
+
+.card-dashboard{
+
+    margin-bottom:20px;
+
+}
+
+.product-img{
+
+    height:180px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.main-content h2{
+
+    font-size:28px;
+
+}
+
+.product-info{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.product-buttons{
+
+    flex-wrap:wrap;
+
+}
+
+.btn-danger{
+
+    width:100%;
+
+}
+
+}

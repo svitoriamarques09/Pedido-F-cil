@@ -1,0 +1,447 @@
+/*==================================
+    RESET
+==================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f6fa;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(14px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/*==================================
+    SIDEBAR
+==================================*/
+
+.sidebar{
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:250px;
+    height:100vh;
+
+    background:linear-gradient(180deg,#8B0000,#C62828);
+
+    color:#fff;
+
+    padding:25px;
+
+    overflow-y:auto;
+
+}
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.logo i{
+
+    font-size:50px;
+
+    color:#FFD54F;
+
+}
+
+.sidebar-logo-img{
+    width:64px;
+    height:64px;
+    object-fit:cover;
+    border-radius:16px;
+    background:#fff;
+    padding:4px;
+}
+
+.logo h3{
+
+    margin-top:10px;
+
+    font-weight:bold;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    margin-bottom:12px;
+
+}
+
+.sidebar ul li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a{
+
+    background:rgba(255,255,255,.18);
+
+}
+
+/*==================================
+    MAIN
+==================================*/
+
+.main-content{
+
+    margin-left:250px;
+
+    padding:35px;
+    animation:fadeUp .45s ease both;
+
+}
+
+/*==================================
+    TÍTULOS
+==================================*/
+
+.main-content h2{
+
+    font-weight:700;
+
+    color:#333;
+
+}
+
+.main-content p{
+
+    color:#777;
+
+}
+
+/*==================================
+    BOTÃO
+==================================*/
+
+.btn-danger{
+
+    background:#C62828;
+
+    border:none;
+
+}
+
+.btn-danger:hover{
+
+    background:#a71d1d;
+
+}
+
+/*==================================
+    CARDS
+==================================*/
+
+.card-dashboard{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    animation:fadeUp .45s ease both;
+    transition:transform .25s ease, box-shadow .25s ease;
+
+    height:100%;
+
+}
+
+.card-dashboard:hover{
+
+    transform:translateY(-6px);
+    box-shadow:0 16px 34px rgba(0,0,0,.12);
+
+}
+
+.card-info span{
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+.card-info h3{
+
+    margin-top:10px;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+.card-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.card-icon i{
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+/*==================================
+    BOX
+==================================*/
+
+.dashboard-box{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    animation:fadeUp .5s ease both;
+
+}
+
+/*==================================
+    FORMULÁRIOS
+==================================*/
+
+.form-control,
+.form-select{
+
+    border-radius:10px;
+
+    height:45px;
+
+}
+
+.input-group-text{
+
+    background:white;
+
+}
+
+/*==================================
+    TABELA
+==================================*/
+
+.table{
+
+    margin-top:10px;
+
+}
+
+.table thead{
+
+    background:#f8f9fa;
+
+}
+
+.table thead th{
+
+    color:#555;
+
+    font-weight:600;
+
+    border:none;
+
+}
+
+.table tbody td{
+
+    vertical-align:middle;
+
+}
+
+.table tbody tr{
+
+    animation:fadeUp .35s ease both;
+    transition:background-color .2s ease, transform .2s ease;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f8f9fa;
+    transform:translateX(3px);
+
+}
+
+.btn,
+.form-control,
+.form-select,
+.sidebar ul li a{
+    transition:transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.btn:hover,
+.sidebar ul li a:hover{
+    transform:translateY(-2px);
+}
+
+.form-control:focus,
+.form-select:focus{
+    box-shadow:0 0 0 .2rem rgba(198,40,40,.15);
+    border-color:#C62828;
+}
+
+@media (prefers-reduced-motion: reduce){
+    *,
+    *::before,
+    *::after{
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        scroll-behavior:auto !important;
+        transition-duration:.01ms !important;
+    }
+}
+
+/*==================================
+    BADGES
+==================================*/
+
+.badge{
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+/*==================================
+    BOTÕES DA TABELA
+==================================*/
+
+.btn-sm{
+
+    width:36px;
+
+    height:36px;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-right:5px;
+
+    border-radius:8px;
+
+}
+
+/*==================================
+    RESPONSIVO
+==================================*/
+
+@media(max-width:992px){
+
+.sidebar{
+
+    width:100%;
+
+    height:auto;
+
+    position:relative;
+
+}
+
+.main-content{
+
+    margin-left:0;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.main-content{
+
+    padding:20px;
+
+}
+
+.card-dashboard{
+
+    margin-bottom:20px;
+
+}
+
+.table{
+
+    font-size:14px;
+
+}
+
+.btn-danger{
+
+    width:100%;
+
+    margin-top:15px;
+
+}
+
+}

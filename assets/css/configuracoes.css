@@ -1,0 +1,434 @@
+/*==================================
+    RESET
+==================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f6fa;
+}
+
+/*==================================
+    SIDEBAR
+==================================*/
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:250px;
+    height:100vh;
+
+    background:linear-gradient(180deg,#8B0000,#C62828);
+
+    color:#fff;
+
+    padding:25px;
+
+    overflow-y:auto;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.logo i{
+    font-size:55px;
+    color:#FFD54F;
+}
+
+.sidebar-logo-img{
+    width:64px;
+    height:64px;
+    object-fit:cover;
+    border-radius:16px;
+    background:#fff;
+    padding:4px;
+}
+
+.logo h3{
+    margin-top:10px;
+    font-weight:700;
+    font-size:24px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding-left:0;
+}
+
+.sidebar ul li{
+    margin-bottom:10px;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    color:#fff;
+    text-decoration:none;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+/*==================================
+    CONTEÚDO
+==================================*/
+
+.main-content{
+
+    margin-left:250px;
+
+    padding:35px;
+
+}
+
+.page-title{
+
+    margin-bottom:30px;
+
+}
+
+.page-title h2{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#2c2c2c;
+
+}
+
+.page-title p{
+
+    color:#777;
+
+    font-size:16px;
+
+}
+
+/*==================================
+    CARDS
+==================================*/
+
+.config-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:25px;
+
+    transition:.3s;
+
+}
+
+.config-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.config-card h4{
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+.config-card h4 i{
+
+    color:#C62828;
+
+    margin-right:8px;
+
+}
+
+/*==================================
+    FORMULÁRIOS
+==================================*/
+
+.form-label{
+
+    font-weight:600;
+
+    color:#555;
+
+    margin-bottom:8px;
+
+}
+
+.form-control,
+.form-select{
+
+    height:48px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    transition:.3s;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#C62828;
+
+    box-shadow:0 0 0 .2rem rgba(198,40,40,.15);
+
+}
+
+/*==================================
+    LOGO
+==================================*/
+
+.logo-preview{
+
+    width:180px;
+
+    height:180px;
+
+    margin:auto;
+
+    border-radius:18px;
+
+    border:2px dashed #ddd;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:#fafafa;
+
+}
+
+.logo-preview img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+}
+
+/*==================================
+    SWITCHS
+==================================*/
+
+.form-check{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:8px 0;
+
+}
+
+.form-check-input{
+
+    width:48px;
+
+    height:24px;
+
+    cursor:pointer;
+
+}
+
+.form-check-label{
+
+    font-weight:500;
+
+    color:#444;
+
+}
+
+/*==================================
+    BOTÕES
+==================================*/
+
+.btn-danger{
+
+    background:#C62828;
+
+    border:none;
+
+    height:50px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-danger:hover{
+
+    background:#a81d1d;
+
+}
+
+.btn-outline-danger{
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+/*==================================
+    STATUS WHATSAPP
+==================================*/
+
+.text-success{
+
+    font-weight:600;
+
+}
+
+/*==================================
+    RESPONSIVO
+==================================*/
+
+@media(max-width:992px){
+
+.sidebar{
+
+    position:relative;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.main-content{
+
+    margin-left:0;
+
+    padding:25px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.page-title h2{
+
+    font-size:28px;
+
+}
+
+.config-card{
+
+    padding:20px;
+
+}
+
+.logo-preview{
+
+    width:150px;
+
+    height:150px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.main-content{
+
+    padding:15px;
+
+}
+
+.form-control,
+.form-select{
+
+    height:45px;
+
+}
+
+.btn{
+
+    width:100%;
+
+}
+
+}
+
+/* Customizações gerais dos Cards de Configuração */
+.config-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+/* Correção da Logo Quebrada */
+.logo-preview {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+.logo-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Alinhamento dos switches de preferências */
+.form-check-input {
+    cursor: pointer;
+    width: 2.5em !important;
+    height: 1.25em !important;
+}
